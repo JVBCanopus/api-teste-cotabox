@@ -13,7 +13,7 @@ const userController = {
 
             res.status(201).json({ response, msg: "Usuário criado com sucesso!" });
         } catch (error) {
-            console.log('deu arrado ai mane');
+            res.status(400).json({ msg: "Um erro inesperado aconteceu, tente novamente mais tarde!" });
         }
     },
 
